@@ -60,7 +60,7 @@ const Navigation = () => {
               asChild
               className="hidden sm:inline-flex bg-brand-navy hover:bg-brand-navy-dark"
             >
-              <Link to="/contact">Get Quote</Link>
+              <Link to="/contact">Contact Us</Link>
             </Button>
 
             {/* Mobile menu button */}
@@ -101,7 +101,7 @@ const Navigation = () => {
                   className="w-full bg-brand-navy hover:bg-brand-navy-dark"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <Link to="/contact">Get Quote</Link>
+                  <Link to="/contact">Contact Us</Link>
                 </Button>
               </div>
             </div>

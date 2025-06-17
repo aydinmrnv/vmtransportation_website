@@ -293,7 +293,7 @@ const About = () => {
               className="bg-white text-brand-navy hover:bg-gray-100 text-lg px-8 py-3"
             >
               <Link to="/contact">
-                Get Your Quote
+                Contact Us
                 <ChevronRight className="ml-2 h-5 w-5" />
               </Link>
             </Button>
