@@ -46,9 +46,17 @@ const Privacy = () => {
                   We respect your privacy. By contacting VM Transportation via
                   text message (SMS), you consent to receive text responses
                   related to your inquiry. We do not sell or share your contact
-                  information. You may opt out at any time by replying "STOP".
-                  No mobile information will be shared with third parties for
-                  marketing purposes.
+                  information. You may opt out of SMS communication at any time
+                  by replying "STOP" to any message. No mobile information will
+                  be shared with third parties/affiliates for
+                  marketing/promotional purposes. All OPT-IN requests include
+                  text messaging originator opt-in data and consent; this
+                  information will not be shared with third parties.
+                </p>
+
+                <p className="text-lg">
+                  For privacy-related concerns or questions, please contact us
+                  at vmtrans@gmail.com.
                 </p>
 
                 <div className="bg-brand-gray rounded-lg p-6">

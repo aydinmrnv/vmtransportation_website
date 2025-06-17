@@ -11,6 +11,7 @@ import {
   Users,
   Route,
   Phone,
+  Mail,
   ChevronRight,
 } from "lucide-react";
 
@@ -79,13 +80,22 @@ const Home = () => {
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <a
-                href="tel:+19162269909"
-                className="flex items-center justify-center text-white text-lg hover:text-blue-200 transition-colors"
-              >
-                <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
-                <span className="whitespace-nowrap">(916) 226-9909</span>
-              </a>
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center justify-center">
+                <a
+                  href="tel:+19162269909"
+                  className="flex items-center justify-center text-white text-lg hover:text-blue-200 transition-colors"
+                >
+                  <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
+                  <span className="whitespace-nowrap">(916) 226-9909</span>
+                </a>
+                <a
+                  href="mailto:vmtrans@gmail.com"
+                  className="flex items-center justify-center text-white text-lg hover:text-blue-200 transition-colors"
+                >
+                  <Mail className="mr-2 h-5 w-5 flex-shrink-0" />
+                  <span className="whitespace-nowrap">vmtrans@gmail.com</span>
+                </a>
+              </div>
             </div>
           </div>
         </div>
