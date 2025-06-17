@@ -24,17 +24,18 @@ const Contact = () => {
         </div>
       </section>
 
-      {/* Content Coming Soon */}
+      {/* Contact Information */}
       <section className="py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="bg-brand-gray rounded-lg p-12">
             <Mail className="h-24 w-24 text-brand-navy mx-auto mb-6" />
             <h2 className="text-3xl font-bold text-brand-navy mb-4">
-              Contact Form Coming Soon
+              Get In Touch
             </h2>
             <p className="text-xl text-brand-gray-dark mb-8">
-              We're currently building our contact form. In the meantime, please
-              reach out to us directly using the contact information below.
+              Contact VM Transportation LLC directly for all your freight
+              transportation needs. We're here to help with quotes, scheduling,
+              and any questions you may have.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">

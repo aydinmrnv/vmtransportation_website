@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Truck } from "lucide-react";
+import { Menu, X, Truck, Phone } from "lucide-react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,14 +54,15 @@ const Navigation = () => {
             ))}
           </nav>
 
-          {/* Contact Button & Mobile Menu Button */}
+          {/* Contact Phone & Mobile Menu Button */}
           <div className="flex items-center space-x-4">
-            <Button
-              asChild
-              className="hidden sm:inline-flex bg-brand-navy hover:bg-brand-navy-dark"
+            <a
+              href="tel:+19162269909"
+              className="hidden sm:inline-flex items-center space-x-2 bg-brand-navy hover:bg-brand-navy-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
             >
-              <Link to="/contact">Contact Us</Link>
-            </Button>
+              <Phone className="h-4 w-4" />
+              <span>(916) 226-9909</span>
+            </a>
 
             {/* Mobile menu button */}
             <button
@@ -96,13 +97,14 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="pt-2">
-                <Button
-                  asChild
-                  className="w-full bg-brand-navy hover:bg-brand-navy-dark"
+                <a
+                  href="tel:+19162269909"
+                  className="w-full inline-flex items-center justify-center space-x-2 bg-brand-navy hover:bg-brand-navy-dark text-white px-4 py-2 rounded-md text-base font-medium transition-colors"
                   onClick={() => setIsMenuOpen(false)}
                 >
-                  <Link to="/contact">Contact Us</Link>
-                </Button>
+                  <Phone className="h-4 w-4" />
+                  <span>(916) 226-9909</span>
+                </a>
               </div>
             </div>
           </div>
