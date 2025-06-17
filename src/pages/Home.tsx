@@ -83,11 +83,11 @@ const Home = () => {
                 asChild
                 variant="outline"
                 size="lg"
-                className="border-white text-white hover:bg-white hover:text-brand-navy text-lg px-8 py-3"
+                className="border-white text-white hover:bg-white hover:text-brand-navy text-lg px-8 py-3 font-semibold"
               >
-                <a href="tel:+19162269909">
-                  <Phone className="mr-2 h-5 w-5" />
-                  (916) 226-9909
+                <a href="tel:+19162269909" className="flex items-center">
+                  <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
+                  <span className="whitespace-nowrap">(916) 226-9909</span>
                 </a>
               </Button>
             </div>
