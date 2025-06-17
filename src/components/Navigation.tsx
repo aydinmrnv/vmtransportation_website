@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Truck, Phone } from "lucide-react";
+import { Menu, X, Truck, Phone, Mail } from "lucide-react";
 
 const Navigation = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,14 +54,24 @@ const Navigation = () => {
             ))}
           </nav>
 
-          {/* Contact Phone & Mobile Menu Button */}
-          <div className="flex items-center space-x-4">
+          {/* Contact Info & Mobile Menu Button */}
+          <div className="flex items-center space-x-2">
+            {/* Phone */}
             <a
               href="tel:+19162269909"
-              className="hidden sm:inline-flex items-center space-x-2 bg-brand-navy hover:bg-brand-navy-dark text-white px-4 py-2 rounded-md text-sm font-medium transition-colors"
+              className="inline-flex items-center space-x-1 bg-brand-navy hover:bg-brand-navy-dark text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
             >
               <Phone className="h-4 w-4" />
-              <span>(916) 226-9909</span>
+              <span className="hidden lg:inline">(916) 226-9909</span>
+            </a>
+
+            {/* Email */}
+            <a
+              href="mailto:vmtrans@gmail.com"
+              className="inline-flex items-center space-x-1 bg-brand-blue hover:bg-brand-navy text-white px-3 py-2 rounded-md text-sm font-medium transition-colors"
+            >
+              <Mail className="h-4 w-4" />
+              <span className="hidden lg:inline">vmtrans@gmail.com</span>
             </a>
 
             {/* Mobile menu button */}
@@ -96,7 +106,7 @@ const Navigation = () => {
                   {item.name}
                 </Link>
               ))}
-              <div className="pt-2">
+              <div className="pt-2 space-y-2">
                 <a
                   href="tel:+19162269909"
                   className="w-full inline-flex items-center justify-center space-x-2 bg-brand-navy hover:bg-brand-navy-dark text-white px-4 py-2 rounded-md text-base font-medium transition-colors"
@@ -104,6 +114,14 @@ const Navigation = () => {
                 >
                   <Phone className="h-4 w-4" />
                   <span>(916) 226-9909</span>
+                </a>
+                <a
+                  href="mailto:vmtrans@gmail.com"
+                  className="w-full inline-flex items-center justify-center space-x-2 bg-brand-blue hover:bg-brand-navy text-white px-4 py-2 rounded-md text-base font-medium transition-colors"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  <Mail className="h-4 w-4" />
+                  <span>vmtrans@gmail.com</span>
                 </a>
               </div>
             </div>
