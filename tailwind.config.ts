@@ -18,6 +18,9 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -62,6 +65,16 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        // VM Transportation brand colors
+        brand: {
+          navy: "#1e3a8a", // Dark navy blue
+          "navy-dark": "#1e40af", // Darker navy
+          "navy-light": "#3b82f6", // Lighter navy
+          blue: "#2563eb", // Professional blue
+          "blue-light": "#60a5fa", // Light blue
+          gray: "#f8fafc", // Soft gray background
+          "gray-dark": "#64748b", // Dark gray text
+        },
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -85,10 +98,21 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          from: {
+            opacity: "0",
+            transform: "translateY(20px)",
+          },
+          to: {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.6s ease-out forwards",
       },
     },
   },
