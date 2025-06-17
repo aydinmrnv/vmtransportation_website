@@ -69,18 +69,8 @@ const Home = () => {
               Safe, reliable, and efficient interstate freight transportation
               across the U.S. Your trusted partner for all your shipping needs.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
-              <Button
-                asChild
-                size="lg"
-                className="bg-white text-brand-navy hover:bg-gray-100 text-lg px-8 py-3"
-              >
-                <Link to="/contact">
-                  Contact Us
-                  <ChevronRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 items-center justify-center">
+            <div className="flex flex-col gap-4 items-center animate-fade-in">
+              <div className="flex flex-col sm:flex-row gap-2 sm:gap-6 items-center justify-center">
                 <a
                   href="tel:+19162269909"
                   className="flex items-center justify-center text-white text-lg hover:text-blue-200 transition-colors"
@@ -96,6 +86,16 @@ const Home = () => {
                   <span className="whitespace-nowrap">vmtrans@gmail.com</span>
                 </a>
               </div>
+              <Button
+                asChild
+                size="lg"
+                className="bg-white text-brand-navy hover:bg-gray-100 text-lg px-8 py-3"
+              >
+                <Link to="/contact">
+                  Contact Us
+                  <ChevronRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
             </div>
           </div>
         </div>
