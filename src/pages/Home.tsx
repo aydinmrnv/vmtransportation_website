@@ -79,17 +79,13 @@ const Home = () => {
                   <ChevronRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="lg"
-                className="border-white text-white hover:bg-white hover:text-brand-navy text-lg px-8 py-3 font-semibold"
+              <a
+                href="tel:+19162269909"
+                className="flex items-center justify-center text-white text-lg hover:text-blue-200 transition-colors"
               >
-                <a href="tel:+19162269909" className="flex items-center">
-                  <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
-                  <span className="whitespace-nowrap">(916) 226-9909</span>
-                </a>
-              </Button>
+                <Phone className="mr-2 h-5 w-5 flex-shrink-0" />
+                <span className="whitespace-nowrap">(916) 226-9909</span>
+              </a>
             </div>
           </div>
         </div>
